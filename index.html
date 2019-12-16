@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Message</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript">
+			function message(){
+				var key=document.getElementById("phno");
+				window.open("https://api.whatsapp.com/send?phone=+91 "+key.value);
+
+			}
+		</script>
+	</head>
+	<body>
+			<form method="POST" onsubmit="message()">
+				<h1>WhatsApp Message</h1>
+				<input type="text" name="pno" id="phno" placeholder="Mobile Number"><br>
+				<input type="submit" id="sub" value="Submit">
+			</form>
+	</body>
+</html>
